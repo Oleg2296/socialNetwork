@@ -1,0 +1,28 @@
+
+<div class="login">
+<div class = "container ">
+    <div class="alert alert-danger" ng-show="log.wrong"> Login or password is incorrect
+    </div>
+    <div class="wrapper">
+        <form action=""  ng-submit="log.check()" method="post" name="lform" class="form-signin">
+            <h3 class="form-signin-heading">Welcome Back! Please Sign In</h3>
+            <hr class="colorgraph"><br>
+
+            <input type="text" class="form-control" name="Username" placeholder="Username"
+                   ng-model="log.userCh.login" required />
+            <input type="password" class="form-control" name="Password" placeholder="Password"
+                   ng-model="log.userCh.password" required />
+
+            <input ng-disabled="lform.$invalid" class="btn btn-lg btn-primary btn-block" type="button"
+                   ng-click="log.check()"
+                   value="Login">
+
+            <!--<button ng-disabled="lform.$invalid" class="btn btn-lg btn-primary btn-block">Login</button>-->
+
+            <br>
+            <a class="reg" href="#/registration">Sing up?</a>
+
+        </form>
+    </div>
+</div>
+</div>

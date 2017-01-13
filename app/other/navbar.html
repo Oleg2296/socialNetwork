@@ -1,0 +1,46 @@
+<div class="row">
+    <nav class="navbar navbar-default navbar-static-top navmarg">
+        <div class="row">
+            <div class="col-md-8 col-sm-8 col-lg-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
+                <div class="navbar-header">
+                    <a class="navbar-brand oleh" href="#!/uspage">
+                        <img alt="Brand" width="25px"
+                             src="https://www.kickstarter.com/download/kickstarter-logo-k-grey.png">
+                        <span>homyk</span>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li style="margin-top: 10px; margin-right: 20px">
+                            <form action="" class="search-form">
+                                <div class="form-group has-feedback">
+                                    <label for="search" class="sr-only">Search</label>
+                                    <input type="text" class="form-control" name="search" id="search" placeholder="search">
+                                    <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                </div>
+                            </form>
+                        </li>
+
+                        <!--<li><a href="#/uspage">Головна</a></li>-->
+                        <!--<li><a href="#/uspage">Профіль</a></li>-->
+                        <!--&lt;!&ndash;<li><a href="#!/help">Допомога</a></li>&ndash;&gt;-->
+                        <!--<li><a href="#/login1">Вийти</a></li>-->
+                        <li >
+                        <div  class="dropdown" style="margin-top: 10px">
+                            <button class="btn btn-default dropdown-toggle" type="button"
+                                    data-toggle="dropdown">{{my.isUser.user_name}}
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li ><a href="#!/uspage">Головна</a></li>
+                                <li><a href="#!/peoples">Люди</a></li>
+                                <li><a href="#!/login1" ng-click="my.clear()">Вийти</a></li>
+                                <li ><a href="">Про нас</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>

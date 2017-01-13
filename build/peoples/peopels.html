@@ -1,0 +1,41 @@
+<div class="people container-fluid">
+    <div nav-menu=""></div>
+
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Люди</div>
+
+                <div class="panel-body">
+                    <div id="custom-search-input">
+                        <div class="input-group col-md-12 ">
+                            <input type="text" class="form-control input-lg" ng-model="my.searchPeople"
+                                   placeholder="Buscar" />
+                            <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row peoples_box" ng-repeat="x in people.users | filter: my.searchPeople">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <h2>{{x.user_name}}  {{x.user_sname}}</h2>
+                        </div>
+                        <div class="col-md-3">
+                            <a href=""><h4>Повідомлення</h4></a>
+                            <input class="btn btn-default btn-large btn-info" value="Долучити"
+                                   ng-click="people.addFriend(x)">
+                            <!--<input type="button" value="console"  ng-click='people.lol(people.isUser,x)'>-->
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--ng-model='people.meAdd=x.id'-->
+</div>

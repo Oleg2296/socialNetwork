@@ -1,0 +1,51 @@
+<div class="friends">
+    <div class="container-fluid">
+        <div nav-menu></div>
+        <div class="row">
+
+            <div class="col-md-8 col-md-offset-2 friend_box">
+                <div class="row">
+                    <!--<h1>sadasds</h1>-->
+                    <div class="col-md-6 text-center title_fr"><a href="">
+                        <h2 ng-click="friend.applic();friend.checkFr=false;">Заявки</h2>
+                    </a></div>
+                    <div class="col-md-6 title_fr text-center"><a href="">
+                        <h2 ng-click="friend.checkFr=true;friend.checkApp=false">Друзі</h2>
+                    </a></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 friend_search">
+                        <div class="search-form"></div>
+                        <input type="text" class="form-control input-md search_fr" placeholder="Search">
+                    </div>
+
+
+                    <div class="col-lg-10 col-md-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 friend_list">
+                        <div class="row" ng-show="friend.checkFr">
+                            <div class="friend_in_list">
+                                <div class="col-md-3 col-sm-3 col-xs-3"><div class="img_fr img-circle"></div></div>
+                                <div class="col-md-7 col-sm-7 col-lg-7 col-xs-7">
+                                    <h4><a href="#/otherUser" class="">Jhony Depp</a></h4>
+                                    <br><a href="" class="ms">Massage</a>
+                                </div>
+                                <div class="col-md-2"></div>
+                            </div>
+                        </div>
+                            <div class="row" ng-show="friend.checkApp" ng-repeat="x in friend.applicFr">
+                                <div class="friend_in_list">
+                                    <div class="col-md-3 col-sm-3 col-xs-3"><div class="img_fr img-circle"></div></div>
+                                    <div class="col-md-7 col-sm-7 col-lg-7 col-xs-7">
+                                        <h4><a href="#/otherUser" class="">{{x.user_name}} {{x.user_sname}}</a></h4>
+                                        <br><a href="" class="ms">Massage</a>
+                                    </div>
+                                    <div class="col-md-2"><input type="button" value="Долучити"
+                                                                 class="btn btn-default btn-md"
+                                                                 ng-click="friend.addFr(x)"></div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

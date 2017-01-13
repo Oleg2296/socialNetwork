@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="build/css/usPage.css">
+    <link rel="stylesheet" href="build/css/main.css">
+    <link rel="stylesheet" href="build/css/reg.css">
+    <link rel="stylesheet" href="build/css/login.css">
+    <link rel="stylesheet" href="build/css/friend.css">
+    <link rel="stylesheet" href="build/css/massage.css">
+    <title>Social Khomyk</title>
+
+</head>
+
+
+<body ng-app="myApp" ng-controller="myCtrl as my">
+
+
+
+<!--<a class="btn btn-primary" href="#/login1">Login</a>-->
+<!--<a href="#/registration" class="btn btn-primary">Registration</a>-->
+<!--<a href="#/uspage" class="btn btn-primary">Page</a>-->
+<!--<a href="#/friends" class="btn btn-primary">friends</a>-->
+
+<!--<input class="btn btn-warning btn-sm" type="button" value="GET" ng-click="my.get()">-->
+
+
+
+<div class="ng-view"></div>
+
+
+
+
+  <!--коли є підключення до інтернету-->
+<!--<script src="//code.jquery.com/jquery-2.0.3.min.js"></script>-->
+<!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+<!--<script src="//code.angularjs.org/1.2.20/angular.js"></script>-->
+<!--<script src="//code.angularjs.org/1.2.20/angular-route.js"></script>-->
+<!--<script src="//code.angularjs.org/1.2.13/angular-cookies.js"></script>-->
+
+
+<!--коли нема підключення до інтернету-->
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/angular/angular.min.js"></script>
+<script src="../node_modules/angular-route/angular-route.js"></script>
+
+
+<script src="build/js/app.js"> </script>
+<script src="build/js/routing.js"></script>
+
+
+
+<script src="build/js/factory/user-service.js"> </script>
+<script src="build/friends/fr-service.js"> </script>
+<script src="build/login/logService.js"></script>
+<script src="build/usPage/pageService.js"></script>
+<script src="build/registration/regService.js"></script>
+<script src="build/massages/massService.js"></script>
+<script src="build/otherProfile/OPService.js"></script>
+<script src="build/peoples/peopleService.js"></script>
+
+
+<script src="build/js/controllers/controller.js"> </script>
+<script src="build/friends/fr-ctrl.js"> </script>
+<script src="build/registration/regCtrl.js"></script>
+<script src="build/usPage/pageCtrl.js"></script>
+<script src="build/login/logCtrl.js"></script>
+<script src="build/massages/massCtrl.js"></script>
+<script src="build/otherProfile/OPCtrl.js"></script>
+<script src="build/peoples/peopleCtrl.js"></script>
+
+
+<script src="build/js/navbar.js"></script>
+
+</body>
+</html>

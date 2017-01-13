@@ -1,0 +1,19 @@
+.friends .message-bubble {
+  padding: 10px 0px 10px 0px;
+}
+.friends .message-bubble:nth-child(even) {
+  background-color: #F5F5F5;
+}
+.friends .message-bubble > * {
+  padding-left: 10px;
+}
+.friends .panel-body {
+  padding: 0px;
+}
+.friends .panel-heading {
+  background-color: #3d6da7 !important;
+  color: white !important;
+}
+.friends .selFr {
+  padding: 0;
+}
